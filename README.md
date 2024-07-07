@@ -1,4 +1,4 @@
-# NBA Salary Predictions
+# European Football Data Collection, Visualizations, and Models
 
 ## Table of Contents
 1. [Background](#Background)
