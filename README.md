@@ -13,9 +13,9 @@ Expected goals (xG) and Expected Goals Allowed (xGA) have become a ubiquitous st
 I also will do some analysis on xG difference dependent on the formations of different teams. More specifically, I'm interested in seeing the average total xG in games where both teams play with three center backs, only one team plays with three center backs but the other plays with two, etc. I'm also interested in seeing the total xG and goals scored per major league in Europe.
 
 ### 2 -  Data Choices, Extraction, Cleaning, and Analysis<a name="Data_Choices"></a>
-The first thing I needed to do was choose the data I would work with for this project. I knew that I wanted to use NBA player statistics in order to predict player salary class, but I needed to specifically decide the time frame on which I’d focus for my predictions. I settled on using five years previous stats of a player to predict his yearly salary. For example, to predict a player’s salary in 2020, I used stats from 2016, 2017, 2018, 2019, 2020. I made this decision so as to minimize/exclude the data that would take predictive power away from my model, and for practicality in the sense that, in the future, we can use multiple years of data from the past to predict current/future salary.
+All of the data that I used for this project came from FBRef.com, which offers free data for several top leagues. Since FBRef doesn't have an API, I have scraped all of the data.
 
-I began this project with the idea of making it a regression problem, but soon after starting, realized that using classification methods would be more effective and useful. Given the small amount of data for each season, and that some "superstar" players make a yearly salary sometimes five times as large as the average, the error in prediction was very difficult to minimize. By switching to classification, the model could better deal with outliers, while still maintaining predictive power.
+**Cleaning notes here
 
 ### 3 - Use Case Scenario <a name="Use_Case_Scenario"></a>
 These models can be used to know more in the future about, given a player’s statistics, whether he should be making more or less money based on his statistics, and how accurately we can make these predictions.
