@@ -13,7 +13,9 @@ Expected goals (xG) and Expected Goals Allowed (xGA) have become a ubiquitous st
 I also will do some analysis on xG difference dependent on the formations of different teams. More specifically, I'm interested in seeing the average total xG in games where both teams play with three center backs, only one team plays with three center backs but the other plays with two, etc. I'm also interested in seeing the total xG and goals scored per major league in Europe.
 
 ### 2 -  Data Choices, Extraction, Cleaning, and Analysis<a name="Data_Choices"></a>
-All of the data that I used for this project came from FBRef.com, which offers free data for several top leagues. Since FBRef doesn't have an API, I have scraped all of the data.
+All of the data that I used for this project came from FBRef.com, which offers free data for several top leagues. Since FBRef doesn't have an API, I have scraped all of the data. For each league, I have scraped the league table, all of the fixtures (games) for that league, and all of the shots from each of those fixtures. I was then able to amend the shots dataframe (shots_df) to accomodate the shot-taker's team as well as the opposing team. The league and fixtures tables themselves have season-long and per-game xG, but it would have been impossible to know the xG and xGA while nil-nil (zero-zero) using these already existing tables. We also now have xG at the same "grain" as formations which allows us to sum the xG while accounting for formation.
+
+
 
 **Cleaning notes here
 
