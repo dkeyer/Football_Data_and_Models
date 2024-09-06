@@ -24,3 +24,7 @@ These scripts can be used by the public not only for data collection, but also f
 These models can be useful for (among other things) NBA organizations when making decisions about their team's salary cap and potential players they want so sign. If considering signing a player who is currently being paid in a certain class, but who the model predicts should be making the amount of money in a class or two above, they may want to consider that the player could be in line for a pay-raise given his stats. So, that is something that they would need to be cognizant of when planning financially and allocating salaries for players.
 
 In a similar situation, players and agents can use this model, if it shows that he is underpaid, to lobby for bigger contracts based on game statistics.
+
+### 4 - Other Notes <a name="Other_Notes"></a>
+
+I have set up several cron jobs to run these scripts on a Virtual Google Cloud Machine. The VM will start up and run every Tuesday for a few hours, and then is dormant for the rest of the week.
